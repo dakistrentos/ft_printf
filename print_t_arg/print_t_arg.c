@@ -24,10 +24,18 @@ void	print_t_arg(t_arg *arg, char *index)
 {
 	arg->type = *index;
 	calculate_arg(arg);
-	putstr_count(arg->result_arg_string, 1);
-	if (arg->arg_string)
-		free(arg->arg_string);
-	if (arg->result_arg_string)
-		free(arg->result_arg_string);
-	init_arg(arg);
+	if (arg->type == 'c')
+	{
+		prepare_c_conv_main(arg);
+		init_arg(arg);
+	}
+	else if (arg->type != 'c')
+	{
+		putstr_count(arg->result_arg_string, 1);
+		if (arg->arg_string)
+			free(arg->arg_string);
+		if (arg->result_arg_string)
+			free(arg->result_arg_string);
+		init_arg(arg);
+	}
 }

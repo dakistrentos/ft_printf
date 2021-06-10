@@ -6,7 +6,7 @@
 #    By: Vtrentos <Vtrentos@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2021/05/04 11:57:02 by Vtrentos      #+#    #+#                  #
-#    Updated: 2021/06/03 08:39:31 by Vtrentos      ########   odam.nl          #
+#    Updated: 2021/06/10 11:27:19 by Vtrentos      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,7 @@ SRC_FILES = libft/ft_strlen.c libft/ft_strlcpy.c libft/ft_isalpha.c \
 	calculate_arg/prepare_s_conv_plus.c \
 	calculate_arg/prepare_s_conv_width_prec_utils_b.c \
 	calculate_arg/prepare_s_conv_plus_util.c \
+	calculate_arg/prepare_c_conv_main.c \
 	flags/flags_width_main.c flags/flags_width_extras.c \
 	flags/precision.c \
 	puts/puts.c

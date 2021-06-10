@@ -29,10 +29,15 @@ void	s_conv(va_list list, t_arg *arg)
 
 void	c_conv(va_list list, t_arg *arg)
 {
-	arg->arg_string = (char *)malloc(2);
-	arg->arg_string[0] = va_arg(list, int);
-	arg->arg_string[1] = '\0';
-	arg->value = arg->arg_string[0];
+	/* arg->arg_string = (char *)malloc(1);
+	arg->arg_string[0] = '\0';
+
+	arg->result_arg_string = (char *)malloc(1);
+	arg->result_arg_string[0] = '\0'; */
+	//arg->arg_string[0] = va_arg(list, int);
+	//arg->arg_string[0] = '\0';
+	//arg->value = arg->arg_string[0];
+	arg->value = va_arg(list, int);
 }
 
 void	percentage_conv(t_arg *arg)

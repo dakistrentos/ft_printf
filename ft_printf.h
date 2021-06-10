@@ -6,7 +6,7 @@
 /*   By: Vtrentos <Vtrentos@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/04/25 15:34:38 by Vtrentos      #+#    #+#                 */
-/*   Updated: 2021/05/31 16:07:54 by Vtrentos      ########   odam.nl         */
+/*   Updated: 2021/06/10 11:27:43 by Vtrentos      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,5 +94,6 @@ void	prepare_s_conv_plus_util_d(t_arg *arg, char *arg_string);
 void	precision_minus_one(t_arg *arg, char *arg_string);
 void	prepare_s_conv_minus(t_arg *arg, char *arg_string);
 void	minus_flag_on_zero(t_arg *arg, char *arg_string);
+void	prepare_c_conv_main(t_arg *arg);
 
 #endif
