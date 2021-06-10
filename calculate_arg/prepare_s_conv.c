@@ -82,10 +82,6 @@ void	prepare_s_conv_main(t_arg *arg)
 	char	*arg_string;
 
 	arg_string = arg->arg_string;
-	if (arg->type == 'c' && arg->precision_on == '1' && arg->precision == 0)
-		arg->precision_on = '0';
-	if (arg->type == 'c' && arg->value == '\0')
-		prepare_null_char(arg);
 	if (ft_strncmp(arg_string, STR_NULL, ft_strlen(arg_string)) == 0
 		&& arg->precision_minus == '1')
 		prepare_null_str(arg);

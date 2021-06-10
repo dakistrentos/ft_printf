@@ -16,7 +16,7 @@ void	calculate_arg(t_arg *arg)
 	if (arg->type == 'd' || arg->type == 'i' || arg->type == 'x'
 		|| arg->type == 'X' || arg->type == 'p' || arg->type == 'u')
 		prepare_i_conv_main(arg);
-	else if (arg->type == 's' /* || arg->type == 'c' */)
+	else if (arg->type == 's')
 		prepare_s_conv_main(arg);
 	else if (arg->type == 'c')
 		return ;
